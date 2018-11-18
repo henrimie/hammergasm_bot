@@ -108,8 +108,8 @@ local _M =
 		'extra', --must be the last plugin in the list.
 	},
 	available_languages = { -- Sorted alphabetically
-		['en_GB'] = 'English, United Kingdom 🇬🇧'
-		-- ['en_US'] = 'English, United States 🇺🇸',
+		['en_GB'] = 'English, United Kingdom 🇬🇧',
+		['en_GB'] = 'English, United States 🇺🇸',
 		-- ['af_ZA'] = 'Afrikaans 🇿🇦',
 		-- ['ar_SA'] = 'Arabic 🇸🇩',
 		-- ['ca_ES'] = 'Catalan', -- Missing emoji flag as of 16/07/2018
