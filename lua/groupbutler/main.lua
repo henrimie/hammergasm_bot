@@ -124,7 +124,7 @@ local function on_msg_receive(self, callback) -- The fn run whenever a message i
 	-- Do not process messages from normal groups
 	if msg.chat.type == 'group' then
 		api:sendMessage(msg.chat.id, i18n([[Hello everyone!
-My name is %s, and I'm a bot made to help administrators in their hard work.
+My name is %s, and I'm a bot made to help administrators in their hard work keeping the Cryptogasmic Community safe and clean!
 Unfortunately I can't work in normal groups. If you need me, please ask the creator to convert this group to a supergroup and then add me again.
 ]]):format(bot.first_name))
 		api:leaveChat(msg.chat.id)
