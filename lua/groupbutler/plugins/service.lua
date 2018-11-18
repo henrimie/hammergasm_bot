@@ -59,7 +59,7 @@ function _M:onTextMessage(blocks)
 		local text
 		if blocks[1] == 'new_chat_member:bot' then
 			text = i18n("Hello everyone!\n"
-				.. "My name is %s, and I'm a bot made to help administrators in their hard work keeping the Cryptogasmic community safe and clean!\n")
+				.. "My name is %s, and I'm a bot made to help administrators in their hard work.\n")
 				:format(bot.first_name:escape())
 		else
 			text = i18n("Yay! This group has been upgraded. You are great! Now I can work properly :)\n")
