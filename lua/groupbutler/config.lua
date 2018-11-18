@@ -108,7 +108,7 @@ local _M =
 		'extra', --must be the last plugin in the list.
 	},
 	available_languages = { -- Sorted alphabetically
-		['en_GB'] = 'English, United Kingdom 🇬🇧',
+		['en_GB'] = 'English, United Kingdom 🇬🇧'
 		-- ['en_US'] = 'English, United States 🇺🇸',
 		-- ['af_ZA'] = 'Afrikaans 🇿🇦',
 		-- ['ar_SA'] = 'Arabic 🇸🇩',
