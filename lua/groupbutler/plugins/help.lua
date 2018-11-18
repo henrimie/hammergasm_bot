@@ -22,7 +22,7 @@ local function get_helped_string(key)
 	local helped_string = {
 		main_menu = i18n("In this menu you will find all the available commands"),
 		start = i18n([[Hello %s 👋🏼, nice to meet you!
-I'm Hammergasm, here to serve and protect the (Cryptogasmic)[https://cryptogasmic.com/] Community!
+I'm Hammergasm, here to serve and protect the [Cryptogasmic](https://cryptogasmic.com/) Community!
 
 *I can do a lot of cool stuffs*, here's a short list:
 • I can *kick or ban* users
