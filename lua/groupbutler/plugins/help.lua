@@ -22,7 +22,7 @@ local function get_helped_string(key)
 	local helped_string = {
 		main_menu = i18n("In this menu you will find all the available commands"),
 		start = i18n([[Hello %s 👋🏼, nice to meet you!
-I'm Group Butler, the first administration bot using the official Bot API.
+I'm Hammergasm, here to serve and protect the (Cryptogasmic)[https://cryptogasmic.com/] Community!
 
 *I can do a lot of cool stuffs*, here's a short list:
 • I can *kick or ban* users
@@ -41,7 +41,7 @@ Only the group owner can promote it :)
 
 You can use `/, ! or #` to trigger a command.
 
-Group Butler saves the adminlist of a group in its databse to avoid to send too many requests to Telegram.
+Hammergasm saves the adminlist of a group in its databse to avoid to send too many requests to Telegram.
 This list is updated every 5 hours, so there could be some differences between who the bot thinks are the admins and who the admins actually are, if during the 5 hours timeframe some users have been promoted/demoted.
 It's possible to force the bot to update its adminlist with `/cache`.
 
@@ -274,8 +274,8 @@ local function do_keyboard_private()
 	local keyboard = {}
 	keyboard.inline_keyboard = {
 		{
-			{text = i18n("📢 Bot channel"), url = 'https://telegram.me/'..config.channel:gsub('@', '')},
-			{text = i18n("🌍 Select your language"), callback_data = 'selectlang'},
+			{text = i18n("🌍 Chat Group"), url = 'https://telegram.me/cryptogasmic1'},
+			{text = i18n("👥 SSocial Group"), url = 'https://telegram.me/cryptogasmic1'},
 		},
 		{
 			{text = i18n("📕 All the commands"), callback_data = 'help:back'}
