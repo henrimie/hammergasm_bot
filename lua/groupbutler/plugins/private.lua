@@ -22,8 +22,8 @@ local function bot_version()
 end
 
 local strings = {
-	about = i18n([[This bot is based on [otouto](https://github.com/topkecleon/otouto) (AKA @mokubot, channel: @otouto), a multipurpose Lua bot.
-Group Butler wouldn't exist without it.
+	about = i18n([[This bot is based on [GroupButler](https://github.com/group-butler/GroupButler) (AKA @GroupButler_bot), a multipurpose Lua bot.
+Hammergasm wouldn't exist without it.
 
 You can contact the owners of this bot using the /groups command.
 
