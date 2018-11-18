@@ -9,7 +9,7 @@ pot:
 		--force-po \
 		--keyword=i18n \
 		--files-from=/dev/stdin \
-		--output=/dev/stdout | msgmerge --backup=off --update locales/en_GB.po /dev/stdin
+		--output=/dev/stdout | msgmerge --backup=off --update locales/en_CG.po /dev/stdin
 
 luacheck:
 	luacheck . --exclude-files lua/vendor src

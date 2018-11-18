@@ -22,7 +22,7 @@ local function get_helped_string(key)
 	local helped_string = {
 		main_menu = i18n("In this menu you will find all the available commands"),
 		start = i18n([[Hello %s 👋🏼, nice to meet you!
-I'm Group Butler, the first administration bot using the official Bot API.
+I'm Hammgergasm (@hammergasm_bot), here to serve and protect the [Cryptogasmic](https://cryptogasm.com/) community!
 
 *I can do a lot of cool stuffs*, here's a short list:
 • I can *kick or ban* users
@@ -33,7 +33,8 @@ I'm Group Butler, the first administration bot using the official Bot API.
 • I can also warn, kick or ban users when they post a specific media
 …and more, below you can find the "all commands" button to get the whole list!
 
-I work better if you add me to the group administrators (otherwise I won't be able to kick or ban)!]]),
+I work better if you add me to the group administrators (otherwise I won't be able to kick or ban)!
+]]),
 		basics = i18n([[This bot works only in supergroups.
 
 To work properly, [it needs to be admin in your group](https://telegram.me/GroupButler_ch/104), so it can kick or ban people if needed.
@@ -41,7 +42,7 @@ Only the group owner can promote it :)
 
 You can use `/, ! or #` to trigger a command.
 
-Group Butler saves the adminlist of a group in its databse to avoid to send too many requests to Telegram.
+Hammergasm saves the adminlist of a group in its databse to avoid to send too many requests to Telegram.
 This list is updated every 5 hours, so there could be some differences between who the bot thinks are the admins and who the admins actually are, if during the 5 hours timeframe some users have been promoted/demoted.
 It's possible to force the bot to update its adminlist with `/cache`.
 
@@ -189,8 +190,6 @@ So with `/pin` you can generate a message to pin, and edit it how many times you
 
 *Note*: the translators are volunteers, so neither the correctness nor completeness of localizations can be guaranteed.
 
-You can help improve translations on our [Crowdin Project](https://crowdin.com/project/group-butler).
-
 *Special characters*
 
 • `/config` command, then `menu` button: you will receive in private the menu keyboard.
@@ -274,8 +273,12 @@ local function do_keyboard_private()
 	local keyboard = {}
 	keyboard.inline_keyboard = {
 		{
-			{text = i18n("📢 Bot channel"), url = 'https://telegram.me/'..config.channel:gsub('@', '')},
-			{text = i18n("🌍 Select your language"), callback_data = 'selectlang'},
+			{text = i18n("👥 Cryptogasmic Chat"), url = 'https://telegram.me/cryptogasmic1'},
+			{text = i18n("👥 Cryptogasmic Social"), url = 'https://telegram.me/cryptogasmic1'},
+		},
+		{
+			{text = i18n("📢 Crypto updates"), url = 'https://telegram.me/cryptogasmic1'},
+			{text = i18n("📢 Crypto News"), url = 'https://telegram.me/cryptogasmic1'},
 		},
 		{
 			{text = i18n("📕 All the commands"), callback_data = 'help:back'}
