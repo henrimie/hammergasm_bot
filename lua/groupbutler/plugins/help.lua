@@ -275,11 +275,11 @@ local function do_keyboard_private()
 	keyboard.inline_keyboard = {
 		{
 			{text = i18n("🌍 Chat Group"), url = 'https://telegram.me/cryptogasmic1'},
-			{text = i18n("👥 Social Group"), url = 'https://telegram.me/cryptogasmic1'},
+			{text = i18n("👥 Social Group"), url = 'https://t.me/joinchat/Gp0E6E6aKGVvFMNW7TA_6w'},
 		},
 		{
-			{text = i18n("📢 Updates!"), url = 'https://telegram.me/cryptogasmic1'},
-			{text = i18n("📢 News!"), url = 'https://telegram.me/cryptogasmic1'},
+			{text = i18n("📢 Updates!"), url = 'https://t.me/kryptogasmic'},
+			{text = i18n("📢 News!"), url = 'https://t.me/Cryptogasmicnews'},
 		},
 		{
 			{text = i18n("📕 All the commands"), callback_data = 'help:back'}
