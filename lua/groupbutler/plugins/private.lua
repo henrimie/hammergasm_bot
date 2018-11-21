@@ -69,7 +69,11 @@ function _M:onTextMessage(blocks)
 	if blocks[1] == 'group' then
 		if config.help_group and config.help_group ~= '' then
 			api:sendMessage(msg.chat.id,
-				i18n('You can find the list of our support groups in [this channel](%s)'):format(config.help_group), "Markdown")
+				i18n('Cryptogasmic groups & channels:
+[Chat Group](https://t.me/cryptogasmic1)
+[Social Group](https://t.me/joinchat/Gp0E6E6aKGVvFMNW7TA_6w)
+[Krypto's Updates](https://t.me/kryptogasmic)
+[Crypto News](https://t.me/Cryptogasmicnews)'), "Markdown")
 		end
 	end
 end
@@ -86,7 +90,11 @@ function _M:onCallbackQuery(blocks)
 		if config.help_group and config.help_group ~= '' then
 			local markup = {inline_keyboard={{{text = i18n('🔙 back'), callback_data = 'fromhelp:about'}}}}
 			api:editMessageText(msg.chat.id, msg.message_id, nil,
-				i18n("You can find the list of our support groups in [this channel](%s)"):format(config.help_group),
+				i18n("Cryptogasmic groups & channels:
+[Chat Group](https://t.me/cryptogasmic1)
+[Social Group](https://t.me/joinchat/Gp0E6E6aKGVvFMNW7TA_6w)
+[Krypto's Updates](https://t.me/kryptogasmic)
+[Crypto News](https://t.me/Cryptogasmicnews)")),
 				"Markdown", nil, markup)
 		end
 	end
