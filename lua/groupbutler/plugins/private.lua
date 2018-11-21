@@ -86,7 +86,7 @@ function _M:onCallbackQuery(blocks)
 		if config.help_group and config.help_group ~= '' then
 			local markup = {inline_keyboard={{{text = i18n('🔙 back'), callback_data = 'fromhelp:about'}}}}
 			api:editMessageText(msg.chat.id, msg.message_id, nil,
-				i18n("Cryptogasmic groups and channels:\n[Chat Group](https://t.me/cryptogasmic1)\n[Social Group](https://t.me/joinchat/Gp0E6E6aKGVvFMNW7TA_6w)\n[Krypto's Updates](https://t.me/kryptogasmic)\n[Crypto News](https://t.me/Cryptogasmicnews)")),
+				i18n("Cryptogasmic groups and channels:\n[Chat Group](https://t.me/cryptogasmic1)\n[Social Group](https://t.me/joinchat/Gp0E6E6aKGVvFMNW7TA_6w)\n[Krypto's Updates](https://t.me/kryptogasmic)\n[Crypto News](https://t.me/Cryptogasmicnews)"),
 				"Markdown", nil, markup)
 		end
 	end
