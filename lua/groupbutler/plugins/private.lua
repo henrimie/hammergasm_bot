@@ -69,11 +69,11 @@ function _M:onTextMessage(blocks)
 	if blocks[1] == 'group' then
 		if config.help_group and config.help_group ~= '' then
 			api:sendMessage(msg.chat.id,
-				i18n('Cryptogasmic groups and channels:
+				i18n("Cryptogasmic groups and channels:
 [Chat Group](https://t.me/cryptogasmic1)
 [Social Group](https://t.me/joinchat/Gp0E6E6aKGVvFMNW7TA_6w)
 [Kryptos Updates](https://t.me/kryptogasmic)
-[Crypto News](https://t.me/Cryptogasmicnews)'), "Markdown")
+[Crypto News](https://t.me/Cryptogasmicnews)"), "Markdown")
 		end
 	end
 end
